@@ -1,0 +1,44 @@
+.swiperContainer {
+  display: flex;
+  max-width: 90%;
+}
+.slideBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 10% 10% 40%;
+  align-items: center;
+  align-content: center;
+  max-height: 21.1rem;
+  min-height: 21.1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 rgba(1, 59, 129, 0.12);
+  background-color: #fff;
+  padding: 0.5rem 1rem 1rem 1rem;
+  text-align: center;
+}
+.avatarBox {
+  width: 5.6rem !important;
+  height: 5.6rem !important;
+  margin: 0 auto;
+}
+.slideBox > h6 {
+  color: var(--text-1);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.slideBox > span {
+  color: var(--text-3);
+  font-size: 0.87rem;
+  font-weight: 500;
+}
+.slideBox > p {
+  padding-top: 1rem;
+  place-self: start center;
+  font-size: 0.87rem;
+  text-align: center;
+  line-height: 1.6;
+}
+.notActive {
+  opacity: 0.5;
+  background-color: #e9eef6;
+}

@@ -25,6 +25,7 @@ import Business from "../../assets/Icons/home/Business.svg";
 import TopFreelancersCard from "../../components/TopFreelancers/TopFreelancersCard";
 import { Link } from "react-router-dom";
 import { getPortfoliosList, getTopFreelancers } from "../../services/home/home";
+import { scrollHandler } from "../../helper/general";
 
 const Home = () => {
   const [portfolio, setPortfolio] = useState([]);
@@ -32,6 +33,7 @@ const Home = () => {
   const [serverError, setServerError] = useState(false);
   const [serverError2, setServerError2] = useState(false);
   useEffect(() => {
+    scrollHandler(0, 0);
     getTopFreelancers().then((res) => {
       if (res.status === 200) {
         console.log(res, "111");

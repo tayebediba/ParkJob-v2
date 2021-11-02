@@ -1,5 +1,6 @@
+import { useEffect, useState } from "react";
 import { Grid, Paper, Typography } from "@material-ui/core";
-import React, { useState } from "react";
+import { scrollHandler } from "../../../helper/general";
 import Layout from "../../../Layout/Layout";
 import { termsAndConditionsData } from "./constants";
 import classes from "./termsAndConditions.module.css";
@@ -15,6 +16,9 @@ const TermsAndConditions = (props) => {
     });
     setList(updatedTasks);
   };
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <Layout>
       <Paper elevation={3} className={classes.urlPage}>
