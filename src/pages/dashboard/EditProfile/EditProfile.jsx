@@ -16,24 +16,23 @@ import { Link } from "react-router-dom";
 function EditProfile() {
   return (
     <Grid container item xs={12} direction="column">
-      <Paper
-        className="cardMessages"
-        style={{ height: "38rem", borderRadius: "1rem" }}
-      >
+      <Paper className="cardMessages" style={{ borderRadius: "1rem" }}>
         <div className="EditProfileTitle">
           <Grid
             container
             item
-            xs={12}
+            xs={4}
+            md={12}
             justify="space-between"
             direction="row"
+            display="flex"
             className="cardTitle"
           >
             <div>
               <AccountCircleIcon />
               <p>اطلاعات فردی</p>
             </div>
-            <Link to="/dashboard/profile">
+            <Link to="/dashboard/profile" style={{ textDecoration: "none" }}>
               <div style={{ cursor: "pointer" }}>
                 <Typography className="color-blue">بازگشت</Typography>
               </div>
@@ -48,21 +47,35 @@ function EditProfile() {
           direction="row"
           className="avatar"
         >
-          <Grid container item xs={5} justify="flex-end" direction="row">
+          <Grid
+            container
+            item
+            xs={12}
+            justify="flex-start"
+            direction="row"
+            style={{ position: "relative", top: "1rem" }}
+          >
             <img src={Avatar} alt="" />
-          </Grid>
-          <Grid container item xs={6} justify="flex-start" direction="row">
-            <div className="upload">
-              <div style={{ width: "100%" }}>
-                <input type="file" id="upload" hidden />
-                <label for="upload" className="uploadBtn">
-                  بارگذاری تصویر
-                </label>
+            <Grid
+              container
+              item
+              xs={2}
+              md={6}
+              justify="flex-start"
+              direction="row"
+            >
+              <div className="upload">
+                <div style={{ width: "100%", whiteSpace: "nowrap" }}>
+                  <input type="file" id="upload" hidden />
+                  <label for="upload" className="uploadBtn">
+                    بارگذاری تصویر
+                  </label>
+                </div>
+                <div style={{ width: "100%", margin: "" }}>
+                  <span>تصویر مورد نظر را با فرمت jpg بارگذاری نمایید</span>
+                </div>
               </div>
-              <div style={{ width: "100%", margin: "20px 15px 0 0" }}>
-                <span>تصویر مورد نظر را با فرمت jpg بارگذاری نمایید</span>
-              </div>
-            </div>
+            </Grid>
           </Grid>
         </Grid>
         <Grid
@@ -73,10 +86,18 @@ function EditProfile() {
           direction="row"
           className="avatar"
         >
-          <form>
-            <Grid container item xs={12} direction="row" justify="center">
-              <Grid xs={4}>
+          <form style={{ position: "relative", paddingTop: "2rem" }}>
+            <Grid
+              container
+              item
+              xs={12}
+              direction="row"
+              justify="center"
+              className="divForm"
+            >
+              <Grid xs={12} md={4}>
                 <label>نام و نام خانوادگی</label>
+                <br />
                 <TextField
                   id="name"
                   variant="outlined"
@@ -84,7 +105,7 @@ function EditProfile() {
                   placeholder="علی محمدی"
                 />
               </Grid>
-              <Grid xs={4}>
+              <Grid xs={12} md={4}>
                 <label>تاریخ تولد</label>
                 <br></br>
                 <FormControl variant="outlined">
@@ -100,7 +121,7 @@ function EditProfile() {
                   />
                 </FormControl>
               </Grid>
-              <Grid xs={4}>
+              <Grid xs={12} md={4}>
                 <label>شهر محل سکونت</label>
                 <br></br>
                 <FormControl variant="outlined">
@@ -121,8 +142,9 @@ function EditProfile() {
                   </Select>
                 </FormControl>
               </Grid>
-              <Grid xs={4} style={{ marginTop: 20 }}>
+              <Grid xs={12} md={4} style={{ marginTop: 20 }}>
                 <label>شماره همراه</label>
+                <br />
                 <TextField
                   id="name"
                   variant="outlined"
@@ -130,13 +152,16 @@ function EditProfile() {
                   placeholder="09185624908"
                 />
               </Grid>
-              <Grid xs={8} style={{ marginTop: 20 }}>
+              <Grid xs={12} md={8} style={{ marginTop: 20 }}>
                 <label>ایمیل</label>
                 <br></br>
                 <TextField
                   id="email"
+                  className="textField"
                   variant="outlined"
-                  style={{ width: "32.3rem" }}
+                  style={{
+                    width: "32.3rem",
+                  }}
                   placeholder="info@gmail.com"
                 />
               </Grid>
@@ -144,6 +169,7 @@ function EditProfile() {
                 <label>درباره من</label>
                 <br></br>
                 <TextField
+                  className="textField"
                   placeholder="توصیحی درباره خود بنویسید ..."
                   style={{ width: "49.5rem", fontFamily: "Dana" }}
                   id="outlined-multiline-static"
@@ -152,32 +178,43 @@ function EditProfile() {
                   variant="outlined"
                 />
               </Grid>
-            </Grid>
-            <Grid xs={12} container item direction="row" justify="flex-end">
-              <div>
-                <Button
-                  variant="contained"
-                  style={{
-                    margin: "35px 15px",
-                    padding: "6px 20px",
-                    fontFamily: "Dana",
-                    fontSize: 18,
-                  }}
-                >
-                  انصراف
-                </Button>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  style={{
-                    padding: "6px 20px",
-                    fontFamily: "Dana",
-                    fontSize: 16,
-                  }}
-                >
-                  ذخیره
-                </Button>
-              </div>
+              <Grid
+                style={{
+                  position: "relative",
+                  paddingTop: "2rem",
+                }}
+                xs={12}
+                style={{ marginTop: 20 }}
+                container
+                item
+                direction="row"
+                justify="flex-end"
+              >
+                <div>
+                  <Button
+                    variant="contained"
+                    style={{
+                      marginLeft: "1rem",
+                      padding: "6px 20px",
+                      fontFamily: "Dana",
+                      fontSize: 16,
+                    }}
+                  >
+                    انصراف
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      padding: "6px 20px",
+                      fontFamily: "Dana",
+                      fontSize: 16,
+                    }}
+                  >
+                    ذخیره
+                  </Button>
+                </div>
+              </Grid>
             </Grid>
           </form>
         </Grid>

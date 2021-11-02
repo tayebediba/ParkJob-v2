@@ -15,7 +15,6 @@ function ProjectManagement(props) {
   return (
     <div>
       <h3 style={{ paddingBottom: "2rem", margin: "0" }}>مدیریت پروژه ها</h3>
-     
       <div style={{ width: "100%", marginTop: 20 }}>
         <Paper
           style={{
@@ -69,7 +68,7 @@ function ProjectManagement(props) {
               }
             />
           </div>
-          <div style={{ width: "100%" }}>
+          <div style={{ width: "100%" }} id="divTable">
             {manageProjectRouts.map((item, index) => {
               return (
                 <Route

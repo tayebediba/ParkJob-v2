@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./newprojecttable.module.css";
+import style from "./newprojecttable.module.css";
 import {
   makeStyles,
   TableContainer,
@@ -28,37 +28,21 @@ function NewProjectTable({ data }) {
       <Table
         className={classes.tableCell}
         aria-label="caption table"
-        className={classes.table}
+        className={style.table}
       >
-        <TableHead>
+        <TableHead id={style.table}>
           <TableRow>
             <TableCell style={{ fontFamily: "Dana" }}>موضوع</TableCell>
-            <TableCell
-              id={classes.textTable}
-              style={{ fontFamily: "Dana" }}
-              align="center"
-            >
+            <TableCell style={{ fontFamily: "Dana" }} align="center">
               دسته بندی
             </TableCell>
-            <TableCell
-              id={classes.textTable}
-              style={{ fontFamily: "Dana" }}
-              align="center"
-            >
+            <TableCell style={{ fontFamily: "Dana" }} align="center">
               بودچه پروژه (ریال)
             </TableCell>
-            <TableCell
-              id={classes.textTable}
-              style={{ fontFamily: "Dana" }}
-              align="center"
-            >
+            <TableCell style={{ fontFamily: "Dana" }} align="center">
               مدت ارسال پیشنهاد
             </TableCell>
-            <TableCell
-              id={classes.textTable}
-              style={{ fontFamily: "Dana" }}
-              align="center"
-            >
+            <TableCell style={{ fontFamily: "Dana" }} align="center">
               پیشنهادهای ثبت شده
             </TableCell>
           </TableRow>
