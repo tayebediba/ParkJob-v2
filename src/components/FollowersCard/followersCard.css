@@ -1,0 +1,32 @@
+.profPic {
+  margin: 1rem;
+}
+.PaperFollowersCard {
+  display: flex !important;
+  width: 100% !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-radius: 15px !important;
+}
+.followersCard {
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px lightgray;
+}
+.followersCard:hover {
+  box-shadow: 0 0 10px #5243ac;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .followersCard {
+    flex-direction: column !important;
+    align-content: space-around !important ;
+    justify-items: center !important;
+  }
+  .PaperFollowersCard {
+    flex-direction: column !important;
+    align-content: space-around !important ;
+    justify-items: center !important;
+    text-align: center !important;
+  }
+}

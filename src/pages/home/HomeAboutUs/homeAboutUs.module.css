@@ -1,0 +1,22 @@
+.urlPage {
+  background-color: #f6f6f6 !important;
+  color: #909599 !important;
+  padding: 1rem 2rem;
+}
+.para {
+  padding: 4rem;
+  margin-top: 4rem;
+}
+@media screen and (max-width: 780px) {
+  .urlPage {
+    margin-top: 3.5rem !important;
+  }
+  .imgAbuot {
+    width: 90%;
+  }
+  .para {
+    padding: 1rem !important;
+    margin-top: 2rem !important;
+    text-align: justify !important;
+  }
+}

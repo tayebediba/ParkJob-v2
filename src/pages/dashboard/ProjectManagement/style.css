@@ -1,0 +1,16 @@
+.activeManagementBtn{
+    border-bottom: 3px solid #5243ac !important;
+    border-radius: 0 !important;
+    color:#5243ac !important;
+}
+.tbody tr:hover svg:nth-child(1){
+    fill:#5243ac !important
+}
+.tbody tr:hover svg:nth-child(2){
+    fill:#ee2b47 !important
+}
+.inProgressPic{
+    width: 2rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+}

@@ -1,0 +1,72 @@
+.activeManagementBtn {
+  border-bottom: 3px solid #002e6e !important;
+  border-radius: 0 !important;
+  color: #002e6e !important;
+  font-weight: bold !important;
+}
+.data-svg {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+.svg-box {
+  border-radius: 0.45rem;
+  align-items: center;
+  padding: 0.25rem;
+  height: max-content;
+  align-content: center;
+  background-color: #ecf1ff;
+  width: min-content;
+  margin-top: 0.25rem;
+}
+.svg-box svg {
+  fill: #f1554c !important;
+  align-items: center !important;
+}
+.tab-date {
+  margin-top: 1rem !important;
+}
+.statistics-card {
+  font-size: 14px;
+  border-left: 1px solid gray;
+  padding: 0 15px 0 0;
+  align-items: center;
+}
+.chart-box {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  max-height: 100%;
+  width: 100%;
+}
+.card-header {
+  font-size: 14px;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 0 1rem 0 0;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .tabs {
+    width: min-content !important;
+  }
+  .tab {
+    font-size: 11px !important;
+    width: min-content !important;
+  }
+  .tab-date {
+    flex-direction: column-reverse !important;
+  }
+  .data-svg {
+    font-size: small !important;
+  }
+  .statistics-card {
+    border-left: none;
+    border-bottom: 1px solid gray;
+  }
+}

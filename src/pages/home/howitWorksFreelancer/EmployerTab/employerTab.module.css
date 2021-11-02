@@ -1,0 +1,25 @@
+@media only screen and (max-width: 600px) {
+  .img {
+    width: 20rem !important;
+  }
+  .img2 {
+    width: 28rem !important;
+    position: relative;
+    left: 180% !important;
+  }
+  #employerh2 {
+    font-size: 0.8rem;
+  }
+  #employerh2 h2 {
+    font-size: 1.1rem;
+  }
+
+  .DivrootEmployer span:nth-child(2) {
+    width: 16rem;
+    text-align: justify;
+  }
+  #span {
+    width: 17rem !important;
+    text-align: justify;
+  }
+}

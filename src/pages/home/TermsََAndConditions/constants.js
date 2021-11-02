@@ -1,0 +1,40 @@
+export const termsAndConditionsData = [
+  { href: "#Overview", title: "بررسی کلی", id: 1, active: true },
+  { href: "#Register", title: "ثبت نام", id: 2, active: false },
+  {
+    href: "#EmployerRelations",
+    title: "روابط کارفرما و فریلنسر",
+    id: 3,
+    active: false,
+  },
+  {
+    href: "#UserRelationships",
+    title: "روابط کاربران و پارک جاب",
+    id: 4,
+    active: false,
+  },
+  { href: "#Tariff", title: "تعرفه های پارک جاب", id: 5, active: false },
+  { href: "#SecurePayment", title: "پرداخت امن", id: 6, active: false },
+  { href: "#WithdrawalRequest", title: "درخواست برداشت", id: 7, active: false },
+  {
+    href: "#OtherPaymentRules",
+    title: "سایر قوانین پرداخت",
+    id: 8,
+    active: false,
+  },
+  { href: "#Report", title: "گزارش", id: 9, active: false },
+  { href: "#DisputeResolution", title: "حل اختلاف", id: 10, active: false },
+  {
+    href: "#TerminationAndSuspension",
+    title: "خاتمه دادن و تعلیق",
+    id: 11,
+    active: false,
+  },
+  {
+    href: "#IntellectualOwnershipOfUserContent",
+    title: "مالکیت معنوی محتوای کاربران",
+    id: 12,
+    active: false,
+  },
+  { href: "#Limitations", title: "محدودیت ها", id: 13, active: false },
+];

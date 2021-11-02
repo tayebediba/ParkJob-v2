@@ -1,0 +1,109 @@
+.search-box {
+  text-align: center !important;
+  padding: 1rem !important;
+  border-radius: 1rem 1rem 0 0 !important;
+  height: 6rem !important;
+}
+.header {
+  height: max-content !important;
+  padding: 1rem !important ;
+  border-radius: 1rem 1rem 0 0 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-content: center !important;
+}
+.header-right {
+  display: flex;
+  justify-content: space-around;
+}
+.avatar- {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+
+  align-items: center;
+  margin-top: 1rem;
+}
+.profile {
+  text-align: center;
+  align-items: center;
+  width: auto;
+  height: max-content;
+  margin-right: 1rem;
+}
+.profile h4 {
+  color: #909599;
+}
+.middle {
+  height: 22rem;
+  overflow-y: auto;
+}
+.middle::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.middle::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey !important;
+  border-radius: 10px !important;
+}
+.middle::-webkit-scrollbar-thumb {
+  background: #002e6e !important;
+  border-radius: 0.75rem !important;
+}
+
+.footer {
+  display: flex;
+}
+.input-box {
+  width: 80% !important;
+  background-color: #f6f6f6 !important;
+  padding: 0.5rem !important;
+  border-radius: 1rem !important;
+  margin: 0.5rem !important;
+}
+.send-btn {
+  width: 10% !important;
+  align-items: center !important;
+  background-color: #f1554c !important;
+  color: #f6f6f6 !important;
+  font-weight: bold !important;
+  padding: 0.5rem !important;
+}
+.icon-file-btn {
+  background-color: #f6f6f6 !important;
+  border-radius: 1rem !important;
+}
+/* .comment-box {
+
+} */
+.comment-img {
+  width: 0.5rem;
+  border-radius: 50%;
+}
+/* ///////////////////////////////// */
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .divRootProfile {
+    position: relative;
+    top: 2rem !important;
+  }
+  .profile {
+  }
+  .profile > h2:nth-child(1) {
+    white-space: nowrap;
+    font-size: 0.8rem !important;
+  }
+  .profile > h4:nth-child(2) {
+    white-space: nowrap;
+    font-size: 0.8rem !important;
+  }
+  #dispalyProfile {
+    white-space: nowrap;
+    font-size: 0.7rem !important;
+  }
+  /* .avatar- {
+  } */
+  /* .avatar- img {
+     width: rem; 
+  } */
+}

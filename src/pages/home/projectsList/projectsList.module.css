@@ -1,0 +1,131 @@
+.urlPage {
+  background-color: #f6f6f6 !important;
+  color: #909599 !important;
+  padding: 1rem 2rem;
+}
+.formBoxFilter {
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+  padding: 1rem !important;
+  margin: 2rem !important;
+}
+.formPrici {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.skillsBox {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.labelSkill {
+  background-color: #f0f1f3;
+  border-radius: 0.5rem;
+  width: max-content;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: small;
+}
+.boxLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.cardBaner {
+  margin: 3rem;
+  padding: 1rem;
+  border-radius: 1rem !important;
+}
+.cardBaner:hover {
+  box-shadow: 0px 3px 13px rgba(0, 46, 110, 0.5);
+}
+.recordBtn:hover {
+  background-color: #002e6e !important;
+  color: #f6f6f6;
+  font-weight: bold;
+}
+.search {
+  width: 30%;
+}
+
+.searchBox {
+  width: 80%;
+  margin: 0 1rem;
+  background-color: #fff;
+}
+.skillBox {
+  background-color: #fff;
+  margin-top: 1.5rem !important;
+}
+.btnBox {
+  
+  background-color: #f6f6f6 !important;
+  margin-top: 1.5rem !important;
+}
+.ButtonBox {
+  margin-top: 1rem !important;
+  justify-content: space-between !important;
+}
+.informationCard {
+  display: flex !important;
+  justify-content: center !important;
+  align-content: space-between !important;
+  flex-direction: column !important;
+}
+
+@media screen and (max-width: 780px) {
+  .urlPage {
+    margin-top: 3.5rem !important;
+  }
+  .formBoxFilter {
+    height: max-content !important;
+    width: max-content !important;
+    margin: 1rem 0 !important;
+  }
+  .formPrici {
+    flex-direction: column !important;
+    align-content: space-between !important;
+    justify-items: center !important;
+    margin: 0 !important;
+  }
+  .formPrici div {
+    margin: 0.25rem 0 !important;
+  }
+  .search {
+    width: 100% !important;
+  }
+  .skillBox {
+    width: 50% !important;
+  }
+  .btnBox {
+    margin-left: 2.5rem !important;
+  }
+  .skillsBox {
+    flex-wrap: wrap !important;
+  }
+  .cardBaner {
+    margin: 1.5rem !important;
+  }
+  .boxLink {
+    align-content: center !important;
+    justify-content: center;
+  }
+  .boxLink div {
+    margin: 0.65rem !important;
+  }
+  .ButtonBox Button {
+    font-size: 10px;
+    width: max-content !important;
+  }
+  .ButtonBox {
+    margin: 1rem !important;
+  }
+  .informationCard {
+    flex-direction: row !important;
+    justify-content: space-around !important;
+  }
+}

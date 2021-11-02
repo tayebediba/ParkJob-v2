@@ -1,0 +1,74 @@
+.card-body {
+  margin: 2rem auto 2rem auto;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between !important;
+}
+.Monthly-btn {
+  background-color: #f1554c !important;
+  color: #f0f1f3 !important;
+}
+.Annually-btn {
+  background-color: #f0f1f3 !important;
+  color: black !important;
+}
+
+.Pricing-cards {
+  margin: 2rem !important;
+  height: 100% !important;
+  width: fit-content !important;
+  border-radius: 1rem !important;
+  padding: 1rem !important;
+  background-color: #ecf1ff !important;
+}
+.card-header h2 {
+  padding-top: 1rem;
+}
+.card-header {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  width: 100% !important;
+}
+.Price {
+  color: #002e6e;
+}
+.text-content {
+  display: flex;
+  justify-content: baseline;
+}
+.text-content svg {
+  padding-top: 0.5rem !important;
+  margin-left: 1rem !important;
+  color: #002e6e !important;
+}
+.select-btn {
+  width: 100% !important;
+  margin-top: 2rem !important;
+  padding: 0.5rem !important;
+}
+.Pricing-cards:hover {
+  background-color: #002e6e !important;
+  color: #ecf1ff !important;
+}
+.Pricing-cards:hover svg {
+  color: #ecf1ff !important;
+}
+.Pricing-cards:hover .Price {
+  color: #ffcb05;
+}
+.Pricing-cards:hover .select-btn {
+  background-color: #f1554c !important;
+  color: #ecf1ff !important;
+}
+@media only screen and (max-width: 600px) {
+  .card-body {
+    margin: 0 !important;
+    align-content: space-between !important;
+  }
+  .Pricing-cards {
+    height: min-content !important;
+    margin: 1rem 0 !important;
+    width: max-content !important;
+  }
+}

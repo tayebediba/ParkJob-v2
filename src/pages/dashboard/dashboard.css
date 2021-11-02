@@ -1,0 +1,26 @@
+.container {
+  background-color: #f6f6f6;
+  height: 100%;
+  font-family: Dana;
+}
+.dashboardContent {
+  padding: 1rem !important;
+}
+.test {
+  font-size: 1rem;
+}
+/* ///////////////////////////////// */
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .dashboardContent {
+    /* background-color: black !important; */
+    width: 21rem !important;
+    padding: 0rem !important;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+    right: 2%;
+    /* justify-content: center; */
+  }
+}

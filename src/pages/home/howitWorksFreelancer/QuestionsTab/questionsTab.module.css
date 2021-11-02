@@ -1,0 +1,24 @@
+.boxQuestions {
+  margin: 2rem;
+}
+.accordion {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem !important;
+}
+.heading {
+  font-weight: bold !important;
+}
+.content {
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+/* ///////////////////////////// */
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+  .content {
+    text-align: justify;
+  }
+}

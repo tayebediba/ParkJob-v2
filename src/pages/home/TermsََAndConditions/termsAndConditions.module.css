@@ -1,0 +1,38 @@
+.urlPage {
+  background-color: #f6f6f6 !important;
+  color: #909599 !important;
+  padding: 1rem 2rem;
+}
+.list {
+  list-style: circle;
+  margin: 2rem;
+}
+.list a {
+  text-decoration: none;
+  color: #909599;
+}
+.content {
+  border-right: #909599 2px solid;
+  height: 100%;
+  padding: 0 2rem;
+  margin: 2rem auto;
+}
+.date {
+  color: #909599;
+  font-size: small;
+  margin: 2rem 0;
+}
+.itemList {
+  color: #909599;
+}
+.itemList.active {
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  .urlPage {
+    margin-top: 3.5rem !important;
+  }
+  .content {
+    text-align: justify !important;
+  }
+}

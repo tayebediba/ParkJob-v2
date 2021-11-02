@@ -1,0 +1,214 @@
+.dashbardAlert {
+  display: flex;
+  background-color: #5243ac !important;
+  padding: 0.7rem 1rem;
+  color: #fff !important;
+  justify-content: space-between;
+  font-family: Dana;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.dashbardAlert p {
+  font-family: Dana;
+}
+.card-dashboard {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  border-radius: 1rem !important;
+  justify-content: space-between;
+  font-family: Dana;
+  margin-bottom: 1rem;
+  position: relative !important;
+}
+
+.color-blue {
+  color: #0cbefb;
+}
+.project-link p {
+  font-family: Dana;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+.pink {
+  background-color: #ee8e92;
+  position: absolute !important;
+  top: -2.1rem;
+  right: 2rem;
+  flex-grow: 0;
+  padding: 12px;
+  box-shadow: 0 7px 15px 0 rgba(244, 161, 36, 0.25);
+}
+.pink img {
+  height: 80% !important;
+  width: 80% !important;
+}
+.mainAvatarBox {
+  display: flex;
+  align-items: center;
+  color: #909599;
+  font-size: 0.8rem;
+}
+.mainAvatarBox img {
+  margin: 0 0 0.5rem 0.4rem;
+  padding-bottom: 0.3rem;
+}
+.progresDeatails {
+  display: flex;
+  justify-content: space-between;
+  color: #909599;
+  font-size: 0.9rem;
+}
+.progresBar {
+  margin: 1rem 0 !important;
+}
+.date-Condition {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.77rem;
+  font-weight: bold;
+}
+.date {
+  padding: 0.3rem 0.7rem;
+}
+.Condition {
+  padding: 0.3rem 0.7rem;
+  border-radius: 7px;
+}
+.inProcess {
+  background-color: #dfe2fe;
+  color: #5243ac;
+}
+.Pending {
+  background-color: #ffe598;
+  color: #ff8354;
+}
+.Finished {
+  background-color: #e1fce6;
+  color: #359f79;
+}
+.cardMessages {
+  border-radius: 15px;
+  flex-grow: 0;
+  /* margin: 1rem 1.2rem 2rem 1.2rem; */
+  padding: 1rem 1rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-family: Dana;
+}
+.titleCard {
+  display: flex;
+  justify-content: space-around;
+  color: #909599;
+  border-bottom: #909599 2px solid;
+  padding-bottom: 0.25rem;
+  font-size: 0.7rem;
+}
+.contentCard {
+  margin-top: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem;
+}
+.avatarName {
+  display: flex;
+  justify-content: flex-start;
+}
+.avatarName p {
+  padding-right: 0.5rem;
+}
+.Topic {
+  display: flex;
+  justify-content: space-between;
+}
+.Topic svg {
+  height: 0.8rem;
+  width: 0.8rem;
+  padding-top: 0.15rem;
+  fill: #909599;
+}
+.ticketBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  font-weight: bold;
+}
+.ticketBox svg {
+  height: 0.8rem;
+  width: 0.8rem;
+  fill: #909599;
+}
+.ticket {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+.ticket svg {
+  margin-left: 0.2rem;
+}
+.data {
+  margin-left: 2rem;
+  padding: 0.5rem;
+}
+.ticketCard {
+  margin-top: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+}
+.ticketCard p {
+  font-weight: bold;
+}
+.ticket-red svg {
+  fill: #ee2b47;
+}
+.ticket-green svg {
+  fill: #359f79;
+}
+.ticket-orange svg {
+  fill: #ff8354;
+}
+.cardSuggestions {
+  min-height: 5.2rem;
+  /* margin: 48px 37px 48px 24px; */
+  padding: 21px 17px 20px;
+  border-radius: 1rem !important;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+.pinkColor {
+  background-color: #ee8e92 !important;
+}
+.blueColor {
+  background-color: #6659b8 !important;
+}
+.box-icon {
+  width: min-content;
+  height: min-content;
+  flex-grow: 0;
+  margin: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  align-items: center !important;
+  justify-content: center;
+}
+.pinkBox {
+  background-color: #f8bdbf;
+}
+.blueBox {
+  background-color: #dfe2fe;
+}
+.pinkBox svg {
+  fill: #ee2b47;
+}
+.blueBox svg {
+  fill: #5243ac;
+}
+
+.textBox {
+  color: #fff;
+}

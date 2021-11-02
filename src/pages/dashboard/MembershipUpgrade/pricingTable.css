@@ -1,0 +1,48 @@
+.form-pricing {
+  width: 100%;
+}
+.actions-btn {
+  padding: 1.75rem 1.5rem !important;
+  margin-right: 0.5rem !important;
+  flex: 1 !important;
+  width: min-content !important;
+  white-space: nowrap !important;
+  font-size: medium !important;
+  height: 3rem !important;
+  font-size: large !important;
+}
+
+.form-control {
+  margin-top: 2rem !important;
+  width: 100%;
+}
+.payment-report {
+  margin: 2rem !important;
+}
+.payment-btn {
+  background-color: #ffcb05 !important   ;
+  font-weight: bold !important;
+}
+.back-btn {
+  font-weight: bold !important;
+  margin-left: 2rem !important;
+}
+.payment-btn-icon svg {
+  color: black !important;
+}
+.box-btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 3rem;
+}
+.payment-report {
+  width: 100% !important;
+}
+.balance {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #c4cad0;
+  margin-top: 1rem;
+  padding: 1rem;
+}

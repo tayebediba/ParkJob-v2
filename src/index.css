@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Dana;
+  src: url(./assets/font/danaweb.woff);
+}
+* {
+  scroll-behavior: smooth !important;
+}
+html,
+body {
+  height: 100% !important;
+  width: 100% !important;
+  padding: 0;
+  margin: 0;
+  font-family: Dana;
+}
+
+#root {
+  overflow-x: hidden;
+}

@@ -1,0 +1,78 @@
+.urlPage {
+  background-color: #f6f6f6 !important;
+  color: #909599 !important;
+  padding: 1rem 2rem;
+}
+.profileCard {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #f6f6f6 !important;
+  border-radius: 1rem !important;
+  text-align: center;
+}
+.boxbtn {
+  display: flex;
+  justify-content: space-around;
+}
+.aboutMe {
+  margin: 2rem;
+  padding: 0.5rem;
+  background-color: #f6f6f6 !important;
+  border-radius: 1rem !important;
+}
+.styleSkills {
+  background-color: #909599;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  margin: 1rem 0.25rem;
+}
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paper {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+  .urlPage {
+    margin-top: 3.5rem !important;
+  }
+  .userName,
+  .graphistLogo {
+    font-size: 0.9rem !important;
+  }
+  .textAboutMe,
+  .textSize {
+    font-size: 0.8rem !important;
+  }
+  .title {
+    font-size: 0.1rem;
+  }
+  .btnInvitation {
+    font-size: 0.67rem !important;
+    white-space: nowrap;
+    height: 2rem;
+    margin-left: 0.5rem !important;
+  }
+  .IconButton {
+    height: 2rem;
+  }
+  /* .Menu {
+    width: 5rem;
+  } */
+  .MenuItem {
+    height: 0.7rem !important;
+    font-size: 0.7rem !important;
+  }
+  .paper {
+    width: 80%;
+  }
+  .DivTextArea textarea {
+    width: 110% !important;
+  }
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Dana;
+  src: url(./font/danaweb.woff);
+}
+@font-face {
+  font-family: Dana-FaNum;
+  src: url(./font/Dana-Semipro/Dana-Semipro/farsiNumral/Dana-FaNum-Light.ttf);
+}
+body {
+  margin: 0 !important;
+  font-family: Dana;
+}
+
+html,
+body,
+#root {
+  height: 100% !important;
+  width: 100% !important;
+}

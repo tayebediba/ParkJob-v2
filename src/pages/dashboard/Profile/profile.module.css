@@ -1,0 +1,11 @@
+/* ///////////////////////////////// */
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .imgProfiledashboard {
+    width: 6rem !important;
+  }
+  .aboutMe {
+    position: relative;
+    margin-top: 1rem;
+  }
+}

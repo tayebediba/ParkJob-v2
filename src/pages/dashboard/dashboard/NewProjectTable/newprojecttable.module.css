@@ -1,0 +1,8 @@
+/* ///////////////////////////////// */
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  #tableCell {
+    white-space: nowrap !important;
+    color: red !important;
+  }
+}

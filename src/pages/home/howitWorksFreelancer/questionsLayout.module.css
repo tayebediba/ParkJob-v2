@@ -1,0 +1,44 @@
+.fixLayer {
+  height: max-content;
+  width: max-content;
+}
+.fixLayer img {
+  margin: 0 20%;
+  padding: 2rem;
+}
+.urlPage {
+  background-color: #f6f6f6 !important;
+  color: #909599 !important;
+  padding: 1rem 2rem;
+}
+.fixLayerHeader {
+  text-align: center !important;
+  padding: 1rem !important;
+  align-self: flex-end !important;
+  margin: 2rem !important;
+}
+.GroupBtn {
+  border-bottom: 2px solid #c4cad0;
+  padding: 1rem;
+  margin: 1rem;
+}
+.GroupBtn button {
+  border-style: none;
+  font-size: 1rem;
+  color: #909599;
+  font-weight: bold;
+}
+.activeTab span {
+  color: black !important;
+}
+/* ///////////////////////////// */
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+  .urlPage {
+    margin-top: 3.5rem !important;
+  }
+  .fixLayer img {
+    width: 75% !important;
+  }
+}

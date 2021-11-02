@@ -1,0 +1,30 @@
+.resumeSkillsBox {
+  width: 12rem;
+  height: 6rem;
+  border: solid 1px #c4cad0;
+  box-shadow: 0 0 15px 0 rgba(196, 202, 208, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  flex-wrap: wrap;
+}
+.resumeSkillsBox:hover {
+  background-color: #5243ac;
+  color: #fff;
+}
+.resumeSkillsBox > div {
+  width: 100%;
+  text-align: center;
+}
+
+/* ///////////////////////////////// */
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .divbtnresume {
+    font-size: 0.7rem !important;
+  }
+}

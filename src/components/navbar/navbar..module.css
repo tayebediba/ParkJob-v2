@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px) {
+  #paper {
+    background-color: #1e4383 !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 5%;
+  }
+
+  #AccountCircle {
+    position: relative;
+    right: 10%;
+    color: white;
+  }
+  #AccountCircleIcon {
+    fill: white !important;
+  }
+}

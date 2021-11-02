@@ -1,0 +1,269 @@
+.urlPage {
+  background-color: #f6f6f6 !important;
+  color: #909599 !important;
+  padding: 1rem 2rem;
+}
+.boxInformation {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+.cardInformation {
+  background-color: #f6f6f6 !important;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem !important;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.boxLink {
+  display: flex;
+  justify-content: start;
+  margin-top: 2rem;
+}
+.skillsBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.labelSkill {
+  background-color: #909599;
+  border-radius: 0.5rem;
+  width: max-content;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: small;
+}
+.large {
+  width: 4rem !important;
+  height: 4rem !important;
+}
+.banners {
+  margin: 2rem;
+  padding-right: 4rem;
+}
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.score {
+  margin: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.fileTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+.fileTitle svg {
+  padding-top: 0.5rem;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+  margin: 4rem 0;
+}
+.line {
+  border-bottom: #909599 solid 2px;
+  width: 35%;
+  margin-bottom: 1rem;
+  margin-inline: 1rem;
+}
+.cardFreelancer {
+  text-align: center;
+  padding: 2rem 3rem;
+  border-radius: 1rem !important;
+  margin: 1rem;
+  width: max-content;
+}
+.otherFreelancers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.svgBox {
+  display: flex;
+  font-size: smaller;
+  color: #909599;
+  justify-content: space-between;
+}
+.viewSvg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0.5rem;
+}
+.comment {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: small;
+  margin: 1rem 0.5rem;
+  align-items: center;
+}
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+}
+.paper {
+  background-color: #fff;
+  padding: 2rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 34rem 0 5rem;
+}
+.paper h3 {
+  align-self: flex-start;
+}
+.actionsBtn {
+  width: min-content !important;
+  border-radius: 1rem !important;
+  background-color: #002e6e !important;
+  color: #fff !important;
+  margin-left: 0.5rem !important;
+}
+.boxBtn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-weight: bold;
+}
+.divFooter {
+  position: relative;
+  top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.paper > div > div > h3 {
+  padding-right: 0.5rem;
+}
+#btnCloseModal {
+  padding-left: 0.5rem;
+}
+/* ////////////////////////////////////////// */
+/* REsponsive */
+@media only screen and (max-width: 600px) {
+  .title h2 {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  .boxInformation {
+    font-size: 0.8rem !important;
+  }
+  #btnSubmit {
+    font-size: 0.8rem;
+  }
+  .boxLink {
+    position: relative;
+    left: 5%;
+  }
+  .btnBoxLink:nth-child(1) {
+    font-size: 0.7rem;
+  }
+  .btnBoxLink:nth-child(2) {
+    font-size: 0.7rem;
+  }
+  .btnBoxLink:nth-child(3) {
+    font-size: 0.7rem;
+  }
+  .btnBoxLink:nth-child(4) {
+    font-size: 0.7rem !important;
+  }
+  .skillsBox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #designBaner {
+    font-size: 0 !important;
+    text-align: justify;
+  }
+  .fileTitle h2 {
+    font-size: 0.9rem !important;
+  }
+  #btnUpload {
+    /* font-size: 0.5rem !important; */
+    white-space: nowrap;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    width: 30rem !important;
+  }
+  .paper {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* margin-top: 100%;s */
+  }
+  .TextFieldDescription > div > textarea::placeholder {
+    font-size: 0.7rem !important;
+  }
+  .texth4 {
+    position: relative;
+    right: 5%;
+    font-size: 0.8rem !important;
+  }
+  #FeaturedOffer {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .divFooter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+    top: -2rem !important;
+  }
+
+  #formModal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .textField {
+    width: 10rem !important;
+  }
+  .textField > label {
+    font-size: 0.7rem !important;
+  }
+  .textField > div:nth-child(2) {
+    height: 3rem;
+  }
+  .textField > div:nth-child(2) > input::placeholder {
+    font-size: 0.7rem !important;
+  }
+  .divAddٔewStep {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .actionsBtn {
+    width: 2.7rem !important;
+    height: 2rem !important;
+  }
+  .iconactionsBtn {
+    font-size: 1.2rem !important;
+  }
+
+  .paper > div {
+    position: relative;
+    top: 25rem;
+  }
+}

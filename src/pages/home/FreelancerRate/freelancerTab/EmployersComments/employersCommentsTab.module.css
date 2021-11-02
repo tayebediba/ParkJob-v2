@@ -1,0 +1,10 @@
+.avatar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .textSize {
+    font-size: 0.9rem !important;
+  }
+}

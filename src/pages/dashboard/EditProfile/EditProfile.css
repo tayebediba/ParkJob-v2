@@ -1,0 +1,51 @@
+.EditProfileTitle {
+  border-bottom: #909599 2px solid;
+  width: 100%;
+}
+.cardMessages {
+  max-height: 40rem !important;
+  border-radius: 1rem;
+}
+.cardTitle p {
+  font-family: Dana !important;
+  font-weight: bold;
+  padding: 0;
+  margin: 0.1rem;
+  font-size: 1.2rem;
+}
+.cardTitle div {
+  display: flex;
+  justify-content: flex-start;
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11rem;
+}
+.avatar img {
+  width: 9rem;
+  border-radius: 50%;
+}
+.upload {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.uploadBtn {
+  background-color: #5243ac;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-family: Dana;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+.MuiOutlinedInput-inputMultiline,
+.MuiOutlinedInput-root {
+  font-family: Dana !important;
+}
