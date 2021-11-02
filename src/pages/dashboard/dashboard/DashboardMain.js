@@ -15,7 +15,6 @@ import http from "../../../services/httpService";
 import MessageTable from "../../../components/MessageTable/MessageTable";
 import TicketTable from "../../../components/TicketTable/TicketTable";
 
-
 const DashboardMain = () => {
   const [projectStatus, setProjectStatus] = useState([]);
   const [Message, setMessage] = useState([]);
