@@ -80,30 +80,63 @@
   width: 0.5rem;
   border-radius: 50%;
 }
+
+.inbox {
+  height: 8rem;
+  position: relative;
+  bottom: -0.5rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.listChat :nth-child(1) {
+}
 /* ///////////////////////////////// */
 /* Responsive */
 @media only screen and (max-width: 600px) {
+  #headerPaper {
+    position: relative;
+    width: 19rem !important;
+    left: 1.5% !important;
+  }
   .divRootProfile {
     position: relative;
     top: 2rem !important;
   }
-  .profile {
-  }
+
   .profile > h2:nth-child(1) {
     white-space: nowrap;
     font-size: 0.8rem !important;
+    position: relative;
+    top: 1.5rem;
   }
   .profile > h4:nth-child(2) {
     white-space: nowrap;
     font-size: 0.8rem !important;
+    position: relative;
+    top: 1.5rem;
   }
   #dispalyProfile {
     white-space: nowrap;
     font-size: 0.7rem !important;
+    position: relative;
+    top: 1.2rem;
   }
-  /* .avatar- {
-  } */
-  /* .avatar- img {
-     width: rem; 
-  } */
+  .inbox {
+    display: flex !important;
+    position: relative;
+    left: -1rem !important;
+    justify-content: center !important;
+  }
+  .input-box {
+    width: 50% !important;
+  }
+  .send-btn {
+    width: 5% !important;
+    padding: 0.22rem !important;
+    font-size: 0.8rem !important;
+  }
+  .footer {
+    position: relative;
+    top: 0 !important;
+  }
 }

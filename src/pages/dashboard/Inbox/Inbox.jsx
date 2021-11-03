@@ -62,7 +62,7 @@ function Inbox(props) {
   // };
 
   return (
-    <Grid container>
+    <Grid container className="container">
       <h3 style={{ paddingBottom: "2rem", margin: "0" }}>صندوق پیام ها</h3>
       <Grid
         container
@@ -76,32 +76,48 @@ function Inbox(props) {
           item
           xs={12}
           md={3}
-          direction="column"
-          alignItems="center"
+          // direction="column"
+          // alignItems="center"
+          className="inbox"
         >
           <Paper
-            style={{ height: "100%", borderRadius: "1rem", marginLeft: "1rem" }}
+            elevation={3}
+            style={{
+              height: "100%",
+              marginLeft: "1rem",
+              borderTopLeftRadius: "1rem",
+              borderTopRightRadius: "1rem",
+              display: "flex",
+              justifyContent: "center",
+            }}
           >
-            <Paper item elevation={3} className="search-box">
-              <Input
-                className="input_style"
-                required
-                disableUnderline={true}
-                placeholder="جستجوی شخص ..."
-                style={{
-                  height: "2.5rem",
-                  backgroundColor: "#F0F1F3",
-                  marginTop: "1.5rem",
-                }}
-                endAdornment={
-                  <InputAdornment position="end">
-                    <IconButton>
-                      <Search color="primary" />
-                    </IconButton>
-                  </InputAdornment>
-                }
-              />
-            </Paper>
+            {/* <Paper
+              item
+              elevation={3}
+              className="search-box"
+              style={{ border: "none" }}
+            > */}
+            <Input
+              className="input_style"
+              required
+              disableUnderline={true}
+              placeholder="جستجوی شخص ..."
+              style={{
+                height: "2.5rem",
+                backgroundColor: "#F0F1F3",
+                marginTop: "3rem",
+                position: "relative",
+                right: "12%",
+              }}
+              endAdornment={
+                <InputAdornment position="end">
+                  <IconButton>
+                    <Search color="primary" />
+                  </IconButton>
+                </InputAdornment>
+              }
+            />
+            {/* </Paper> */}
             <Grid item xs={3} style={{ height: "100%", width: "100%" }}></Grid>
           </Paper>
         </Grid>
@@ -113,9 +129,16 @@ function Inbox(props) {
           direction="column"
           className="divRootProfile"
         >
-          <Paper style={{ height: "100%", borderRadius: "1rem" }}>
+          <Paper
+            style={{
+              height: "100%",
+              borderRadius: "1rem",
+              position: "relative",
+              top: "0.5rem",
+            }}
+          >
             <Grid container direction="column" overflow="hidden">
-              <Grid>
+              <Grid id="headerPaper">
                 <Paper elevation={3} item className="header">
                   <div className="header-right">
                     <div className="avatar-">
@@ -143,30 +166,48 @@ function Inbox(props) {
                 </Paper>
               </Grid>
               <Grid item className="middle" direction="column">
-                <List dense={true}>
+                <List dense={true} className="listChat">
                   <ChatItemList
                     logo={pic}
-                    message={{ author: "ali", body: "salam" }}
+                    message={{
+                      author: "ali",
+                      body: "fdsd sdfsdf sfs dfsdf sdfsdfsdfs df fdf fgdfgdfgd gdgdgd dgdf",
+                    }}
                   />
                   <ChatItemList
                     logo={pic}
-                    message={{ author: "mmad", body: "salam" }}
+                    message={{
+                      author: "mmad",
+                      body: "fdsd sdfsdf sfs dfsdf sdfsdfsdfs df fdf fgdfgdfgd gdgdgd dgdf",
+                    }}
                   />
                   <ChatItemList
                     logo={pic}
-                    message={{ author: "ali", body: "salam" }}
+                    message={{
+                      author: "ali",
+                      body: "fdsd sdfsdf sfs dfsdf sdfsdfsdfs df fdf fgdfgdfgd gdgdgd dgdf",
+                    }}
                   />
                   <ChatItemList
                     logo={pic}
-                    message={{ author: "mmad", body: "salam" }}
+                    message={{
+                      author: "mmad",
+                      body: "fdsd sdfsdf sfs dfsdf sdfsdfsdfs df fdf fgdfgdfgd gdgdgd dgdf",
+                    }}
                   />
                   <ChatItemList
                     logo={pic}
-                    message={{ author: "ali", body: "salam" }}
+                    message={{
+                      author: "ali",
+                      body: "fdsd sdfsdf sfs dfsdf sdfsdfsdfs df fdf fgdfgdfgd gdgdgd dgdf",
+                    }}
                   />
                   <ChatItemList
                     logo={pic}
-                    message={{ author: "mmad", body: "salam" }}
+                    message={{
+                      author: "mmad",
+                      body: "fdsd sdfsdf sfs dfsdf sdfsdfsdfs df fdf fgdfgdfgd gdgdgd dgdf",
+                    }}
                   />
                   <ChatItemList
                     logo={pic}
@@ -178,8 +219,9 @@ function Inbox(props) {
                 </List>
               </Grid>
               <Grid
+                style={{ position: "relative", top: "2rem", display: "flex" }}
                 item
-                xs
+                xs={12}
                 className="footer"
                 container
                 justify={"center"}
