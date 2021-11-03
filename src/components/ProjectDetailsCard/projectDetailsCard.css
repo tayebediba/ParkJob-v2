@@ -1,0 +1,30 @@
+.card-body {
+  width: 100% !important;
+  text-align: right !important;
+}
+.chipCard {
+  background-color: #ecf1ff !important;
+  border-radius: 0.28rem !important;
+  margin: 0.15rem !important;
+  color: #002e6e !important;
+}
+.chipBox {
+  text-align: center !important;
+}
+.line {
+  border-bottom: 2px solid #c4cad0;
+  margin: 1rem 0;
+  width: 100% !important;
+}
+.btnCard {
+  width: 100% !important;
+  margin: 1rem !important;
+  background-color: #f1554c !important;
+  color: #fff !important;
+}
+
+@media screen and (max-width: 780px) {
+  .card-body {
+    margin-bottom: 2rem !important;
+  }
+}
