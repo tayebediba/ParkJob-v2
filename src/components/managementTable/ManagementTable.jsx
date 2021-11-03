@@ -8,9 +8,10 @@ import {
   TableRow,
   Tooltip,
 } from "@material-ui/core";
-import {EditOutlined, DeleteOutlineOutlined} from "@material-ui/icons";
+import { EditOutlined, DeleteOutlineOutlined } from "@material-ui/icons";
 import React, { useEffect, useState } from "react";
-import http from '../../services/httpService'
+import http from "../../services/httpService";
+import managmenttable from "./managmenttable.css";
 
 const useStyles = makeStyles({
   table: {
@@ -23,21 +24,20 @@ const useStyles = makeStyles({
 });
 
 function ManagementTable() {
-  const [Activitys , setActivitys] = useState([])
-  useEffect(()=>{
-    http.get('/Activity/ActivityList')
-    .then(res=>{
+  const [Activitys, setActivitys] = useState([]);
+  useEffect(() => {
+    http.get("/Activity/ActivityList").then((res) => {
       console.log(res.data.value);
       setActivitys(res.data.value.projects);
-    })
-  },[])
+    });
+  }, []);
   const classes = useStyles();
 
   return (
     <div>
       <TableContainer>
         <Table aria-label="caption table" className={classes.table}>
-          <TableHead>
+          <TableHead id="table">
             <TableRow>
               <TableCell style={{ fontFamily: "Dana" }} align="left">
                 عنوان پروژه
@@ -59,8 +59,10 @@ function ManagementTable() {
           </TableHead>
           <TableBody className="tbody">
             {Activitys.map((item) => {
-              const TimeGetOffer = new Date(item.canGetOffer).toLocaleString("fa-IR").substring(0,9)
-              console.log(TimeGetOffer)
+              const TimeGetOffer = new Date(item.canGetOffer)
+                .toLocaleString("fa-IR")
+                .substring(0, 9);
+              console.log(TimeGetOffer);
               return (
                 <TableRow key={item.offerId} className={classes.rows} hover>
                   <TableCell component="th" scope="row">
@@ -70,7 +72,7 @@ function ManagementTable() {
                     {item.price}
                   </TableCell>
                   <TableCell style={{ fontFamily: "Dana" }} align="center">
-                  {TimeGetOffer}
+                    {TimeGetOffer}
                   </TableCell>
                   <TableCell style={{ fontFamily: "Dana" }} align="center">
                     {item.offersCount}

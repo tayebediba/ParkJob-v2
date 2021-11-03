@@ -1,9 +1,11 @@
 .EditProfileTitle {
   border-bottom: #909599 2px solid;
   width: 100%;
+  white-space: nowrap;
+  display: flex !important;
 }
 .cardMessages {
-  max-height: 40rem !important;
+  /* max-height: 40rem !important; */
   border-radius: 1rem;
 }
 .cardTitle p {
@@ -21,7 +23,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 11rem;
+
+  /* height: 11rem; */
 }
 .avatar img {
   width: 9rem;
@@ -40,12 +43,30 @@
   padding: 0.5rem;
   border-radius: 0.3rem;
   cursor: pointer;
-  margin-top: 1rem;
+  position: relative;
+  top: 1.5rem;
+  margin-top: 2rem;
   font-family: Dana;
   margin: 0 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+.divuploadProfile {
+  position: relative;
+  margin-top: 1.9rem;
 }
 .MuiOutlinedInput-inputMultiline,
 .MuiOutlinedInput-root {
   font-family: Dana !important;
+}
+.divForm {
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+/* ///////////////////////////////// */
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .textField {
+    width: 18rem !important;
+  }
 }
