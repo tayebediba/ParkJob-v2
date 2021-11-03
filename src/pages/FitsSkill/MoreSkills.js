@@ -10,6 +10,10 @@ const useStyles = makeStyles((theme) => ({
     "& > * + *": {
       marginTop: theme.spacing(3),
     },
+    "@media(max-width: 600px)": {
+      width: 250,
+      marginTop: "2rem",
+    },
   },
 }));
 

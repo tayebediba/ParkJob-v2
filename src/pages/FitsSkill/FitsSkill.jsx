@@ -103,7 +103,7 @@ const FitsSkill = () => {
             <div>
               <MoreSkills />
             </div>
-            <div style={{ width: 500, marginTop: "2rem", padding: "1rem" }}>
+            <div style={{ width: "100%", marginTop: "2rem", padding: "1rem" }}>
               <label>قیمت</label>
               <Box sx={{ width: "100%", marginTop: "1.5rem" }}>
                 <Slider
