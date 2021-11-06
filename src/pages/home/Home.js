@@ -26,6 +26,7 @@ import TopFreelancersCard from "../../components/TopFreelancers/TopFreelancersCa
 import { Link } from "react-router-dom";
 import { getPortfoliosList, getTopFreelancers } from "../../services/home/home";
 import { scrollHandler } from "../../helper/general";
+import { useSelector } from "react-redux";
 
 const Home = () => {
   const [portfolio, setPortfolio] = useState([]);

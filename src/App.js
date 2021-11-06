@@ -16,6 +16,7 @@ function App() {
     window.scrollTo(0, 0);
     document.title = "پارک جاب ";
   }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <StylesProvider jss={jss}>
