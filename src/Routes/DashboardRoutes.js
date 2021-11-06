@@ -11,6 +11,7 @@ import StatisticsFreelancer from "../pages/dashboard/statistics/StatisticsFreela
 import MembershipUpgrade from "../pages/dashboard/MembershipUpgrade/MembershipUpgrade";
 import PricingTable from "../pages/dashboard/MembershipUpgrade/PricingTable";
 import FitsSkill from "../pages/FitsSkill/FitsSkill";
+import AllProject from "../pages/dashboard/AllProject/AllProject";
 const dashboardRoutes = [
   { path: "/dashboard", exact: true, Component: DashboardMain },
   { path: "/dashboard/bills", exact: true, Component: Bills },
@@ -37,5 +38,6 @@ const dashboardRoutes = [
   },
   { path: "/dashboard/PricingTable", exact: true, Component: PricingTable },
   { path: "/dashboard/FitsSkill", exact: true, Component: FitsSkill },
+  { path: "/dashboard/AllProject", exact: true, Component: AllProject },
 ];
 export default dashboardRoutes;

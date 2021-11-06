@@ -215,7 +215,7 @@ const SideBar = (props) => {
                         <Typography variant="button">
                           <Link
                             onClick={handleDisplaySidebarInMobile}
-                            to="/dashboard/profile"
+                            to="/dashboard/FitsSkill"
                           >
                             مرتبط با تخصص من
                           </Link>
@@ -225,7 +225,7 @@ const SideBar = (props) => {
                         <Typography variant="button">
                           <Link
                             onClick={handleDisplaySidebarInMobile}
-                            to="/dashboard/password"
+                            to="/dashboard/AllProject"
                           >
                             همه پروژه ها
                           </Link>
@@ -571,7 +571,7 @@ const SideBar = (props) => {
                       </AccordionDetails>
                       <AccordionDetails className="sidebarItem">
                         <Typography variant="button">
-                          <Link to="/dashboard/password">همه پروژه ها</Link>
+                          <Link to="/dashboard/AllProject">همه پروژه ها</Link>
                         </Typography>
                       </AccordionDetails>
                     </Accordion>
