@@ -13,6 +13,9 @@ const QuestionsLayout = () => {
   const changeTabs = (tab) => {
     setRenderTab(tab);
   };
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
 
   let tab = null;
   switch (renderTab) {
@@ -31,9 +34,6 @@ const QuestionsLayout = () => {
 
       break;
   }
-  useEffect(() => {
-    scrollHandler(0, 0);
-  }, []);
   return (
     <Layout>
       <Paper elevation={3} className={classes.urlPage}>

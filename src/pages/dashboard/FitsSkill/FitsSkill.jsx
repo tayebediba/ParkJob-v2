@@ -10,8 +10,9 @@ import {
   Typography,
 } from "@material-ui/core";
 import { Autocomplete } from "@material-ui/lab";
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectDetailsCard from "../../../components/ProjectDetailsCard/ProjectDetailsCard";
+import { scrollHandler } from "../../../helper/general";
 import ChipsArray from "./ChipsArray";
 import "./fitsSkill.css";
 import MoreSkills from "./MoreSkills";
@@ -46,6 +47,9 @@ const FitsSkill = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <Grid container className="formBox">
       <form

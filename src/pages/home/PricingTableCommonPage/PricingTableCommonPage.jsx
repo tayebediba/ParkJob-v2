@@ -6,7 +6,7 @@ import {
   Grid,
   Paper,
 } from "@material-ui/core";
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./pricingTableCommonPage.module.css";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
 import Layout from "../../../Layout/Layout";
@@ -15,7 +15,12 @@ import panel1 from "../../../assets/Icons/home/panel1.svg";
 import panel4 from "../../../assets/Icons/home/panel4.svg";
 import panel2 from "../../../assets/Icons/home/panel2.svg";
 import panel3 from "../../../assets/Icons/home/panel3.svg";
+import { scrollHandler } from "../../../helper/general";
 const PricingTableCommonPage = () => {
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
+
   return (
     <Layout>
       <Paper elevation={3} className={classes.urlPage}>

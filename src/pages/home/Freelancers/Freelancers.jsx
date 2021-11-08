@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./freelancers.module.css";
 import Layout from "../../../Layout/Layout";
 import { Button, Grid, Paper, TextField } from "@material-ui/core";
 import { Autocomplete, Pagination } from "@material-ui/lab";
 import FreelancersCard from "./FreelancersCard";
+import { scrollHandler } from "../../../helper/general";
 
 const Freelancers = () => {
   const city = [
@@ -39,7 +40,9 @@ const Freelancers = () => {
     { title: "برنامه نویسی , نرم افزار" },
     { title: "سایر کسب و کارها" },
   ];
-
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <Layout>
       <Paper elevation={3} className={classes.urlPage}>

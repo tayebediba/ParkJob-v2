@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import { useFormik } from "formik";
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./bills.module.css";
 import { Link } from "react-router-dom";
 import { Check } from "@material-ui/icons";
@@ -18,11 +18,14 @@ import UploadFiles from "./UploadFiles";
 import Budget from "./Budget";
 import PaymentPlan from "./PaymentPlan";
 import CompletionPayment from "./CompletionPayment";
+import { scrollHandler } from "../../../helper/general";
 
 
 const Bills = () => {
   const [activeStep, setActiveStep] = React.useState(0);
-
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   const steps = [
     { type: "انتخاب دسته بندی" },
     { type: "تکمیل اطلاعات پروژه" },

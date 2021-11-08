@@ -7,13 +7,13 @@ import {
   Select,
   TextField,
 } from "@material-ui/core";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { EmojiObjects } from "@material-ui/icons";
 import ResumeSkills from "../../../components/ResumeSkills/ResumeSkills";
 import { Healing, Tv, WorkOutline } from "@material-ui/icons";
 import "./Resume.css";
 import AutoCompeleteComponent from "../../../components/AutoCompelete/AutoCompeleteComponent";
-
+import { scrollHandler } from "../../../helper/general";
 
 function Resume() {
   const [mounts] = useState([
@@ -64,10 +64,13 @@ function Resume() {
     { name: "1370" },
     { name: "1369" },
   ]);
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <div>
       <h3 style={{ paddingBottom: "2rem", margin: "0" }}>رزومه</h3>
-   
+
       <div style={{ width: "100%", marginTop: 20 }}>
         <Paper
           style={{

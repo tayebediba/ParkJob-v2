@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid, Paper, Typography, Button } from "@material-ui/core";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import EditIcon from "@material-ui/icons/Edit";
 import Avatar from "../../../assets/img/avatar.jpg";
 import { Link } from "react-router-dom";
 import classes from "./profile.module.css";
+import { scrollHandler } from "../../../helper/general";
 
-function Profile() {
+const Profile = () => {
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <Grid container item xs={12} direction="column">
       <h3 style={{ paddingBottom: "2rem", margin: "0" }}>اطلاعات فردی</h3>
@@ -159,6 +163,6 @@ function Profile() {
       </Paper>
     </Grid>
   );
-}
+};
 
 export default Profile;

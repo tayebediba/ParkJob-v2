@@ -6,12 +6,16 @@ import {
   IconButton,
 } from "@material-ui/core";
 import { Search } from "@material-ui/icons";
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, Route } from "react-router-dom";
+import { scrollHandler } from "../../../helper/general";
 import manageProjectRouts from "../../../Routes/ManageProjectRouts";
 import "./style.css";
 
-function ProjectManagement(props) {
+const ProjectManagement = (props) => {
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <div>
       <h3 style={{ paddingBottom: "2rem", margin: "0" }}>مدیریت پروژه ها</h3>
@@ -84,6 +88,6 @@ function ProjectManagement(props) {
       </div>
     </div>
   );
-}
+};
 
 export default ProjectManagement;
