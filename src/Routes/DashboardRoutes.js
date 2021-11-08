@@ -10,8 +10,9 @@ import Resume from "../pages/dashboard/Resume/Resume";
 import StatisticsFreelancer from "../pages/dashboard/statistics/StatisticsFreelancer";
 import MembershipUpgrade from "../pages/dashboard/MembershipUpgrade/MembershipUpgrade";
 import PricingTable from "../pages/dashboard/MembershipUpgrade/PricingTable";
-import FitsSkill from "../pages/FitsSkill/FitsSkill";
 import AllProject from "../pages/dashboard/AllProject/AllProject";
+import FitsSkill from "../pages/dashboard/FitsSkill/FitsSkill";
+
 const dashboardRoutes = [
   { path: "/dashboard", exact: true, Component: DashboardMain },
   { path: "/dashboard/bills", exact: true, Component: Bills },

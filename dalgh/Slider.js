@@ -59,7 +59,6 @@ const Slider = () => {
         }}
         className={classes.swiperContainer}
       >
-         <TopFreelancersCard data={item} key={item.id} />
         {commentCardData.map(({ image, username, job, comment }) => (
           <SwiperSlide key={username}>
             {({ isActive }) => (

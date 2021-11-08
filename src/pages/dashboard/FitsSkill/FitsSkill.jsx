@@ -11,7 +11,7 @@ import {
 } from "@material-ui/core";
 import { Autocomplete } from "@material-ui/lab";
 import React from "react";
-import ProjectDetailsCard from "../../components/ProjectDetailsCard/ProjectDetailsCard";
+import ProjectDetailsCard from "../../../components/ProjectDetailsCard/ProjectDetailsCard";
 import ChipsArray from "./ChipsArray";
 import "./fitsSkill.css";
 import MoreSkills from "./MoreSkills";
