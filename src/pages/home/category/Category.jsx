@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./category.module.css";
 import {
   Avatar,
@@ -24,8 +24,12 @@ import { Link } from "react-router-dom";
 import a from "../../../assets/Icons/home/a.svg";
 import aa from "../../../assets/Icons/home/aa.svg";
 import Layout from "../../../Layout/Layout";
+import { scrollHandler } from "../../../helper/general";
 
 const Category = () => {
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <Layout>
       <Paper elevation={3} className={classes.urlPage}>
