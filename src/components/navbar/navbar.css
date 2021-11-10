@@ -1,0 +1,79 @@
+@media only screen and (max-width: 600px) {
+  #paper {
+    background-color: #1e4383 !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 5%;
+  }
+
+  #AccountCircle {
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative;
+    right: 10%;
+    color: white;
+  }
+  #AccountCircleIcon {
+    fill: white !important;
+  }
+}
+.divPaper {
+  position: absolute;
+  z-index: 1;
+  top: 3rem !important;
+  left: 3rem;
+  width: 11.5rem;
+  height: 5.5rem;
+  display: none;
+}
+.ShowdivPaper {
+  position: absolute;
+  z-index: 1;
+  top: 3rem !important;
+  left: 3rem;
+  width: 11.5rem;
+  height: 5.5rem;
+}
+.LinkDivPaper {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.87rem;
+  position: relative;
+  bottom: 0.1rem;
+}
+.LinkDivPaper2 {
+  font-size: 0.87rem;
+  text-decoration: none;
+  position: relative;
+  bottom: 0.1rem;
+  right: -3rem;
+  font-weight: bold;
+}
+.LinkDivPapeIcon {
+  position: relative;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.butttonSettings {
+  position: relative;
+  right: 0.5rem;
+  width: 93%;
+  border-radius: 10px;
+  padding: 0 !important;
+  margin-top: 0.5rem !important;
+}
+
+.butttonLogout {
+  position: relative;
+  right: 0.5rem;
+  border-radius: 10px;
+  width: 93%;
+  /* top: 0.2rem; */
+  padding: 0 !important;
+  /* margin-top: 0.5rem !important; */
+}
