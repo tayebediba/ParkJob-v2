@@ -12,6 +12,7 @@ import MembershipUpgrade from "../pages/dashboard/MembershipUpgrade/MembershipUp
 import PricingTable from "../pages/dashboard/MembershipUpgrade/PricingTable";
 import AllProject from "../pages/dashboard/AllProject/AllProject";
 import FitsSkill from "../pages/dashboard/FitsSkill/FitsSkill";
+import PaymentOne from "../pages/dashboard/Payment/PaymentOne";
 
 const dashboardRoutes = [
   { path: "/dashboard", exact: true, Component: DashboardMain },
@@ -40,5 +41,6 @@ const dashboardRoutes = [
   { path: "/dashboard/PricingTable", exact: true, Component: PricingTable },
   { path: "/dashboard/FitsSkill", exact: true, Component: FitsSkill },
   { path: "/dashboard/AllProject", exact: true, Component: AllProject },
+  { path: "/dashboard/PaymentOne", exact: true, Component: PaymentOne },
 ];
 export default dashboardRoutes;
