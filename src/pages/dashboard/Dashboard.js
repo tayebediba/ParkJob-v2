@@ -5,11 +5,14 @@ import "./dashboard.css";
 import dashboardRoutes from "../../Routes/DashboardRoutes";
 import { makeStyles } from "@material-ui/core/styles";
 import { AppBar, Tabs, Tab, Box, Grid } from "@material-ui/core";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { scrollHandler } from "../../helper/general";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <div
       role="tabpanel"

@@ -16,6 +16,7 @@ import AttachFileIcon from "@material-ui/icons/AttachFile";
 import pic from "../../../assets/img/picMan3.jpg";
 
 import "./inbox.css";
+import { scrollHandler } from "../../../helper/general";
 
 function Inbox(props) {
   const [messages, setMessages] = React.useState([]);
@@ -60,7 +61,9 @@ function Inbox(props) {
   //     sendMessage();
   //   }
   // };
-
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <Grid container className="container">
       <h3 style={{ paddingBottom: "2rem", margin: "0" }}>صندوق پیام ها</h3>

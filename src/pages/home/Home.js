@@ -27,7 +27,7 @@ import { Link } from "react-router-dom";
 import { getPortfoliosList, getTopFreelancers } from "../../services/home/home";
 import { scrollHandler } from "../../helper/general";
 import { useSelector } from "react-redux";
-
+import Slider from "./Slider/Slider";
 const Home = () => {
   const [portfolio, setPortfolio] = useState([]);
   const [getTopFreelancer, setgetTopFreelancers] = useState([]);
@@ -37,7 +37,6 @@ const Home = () => {
     scrollHandler(0, 0);
     getTopFreelancers().then((res) => {
       if (res.status === 200) {
-        console.log(res, "111");
         setgetTopFreelancers(res.data.value);
       } else {
         setServerError(true);
@@ -194,9 +193,7 @@ const Home = () => {
             ) : !getTopFreelancer.length ? (
               <div>loading...</div>
             ) : (
-              getTopFreelancer
-                .slice(0, 5)
-                .map((item) => <TopFreelancersCard data={item} key={item.id} />)
+              <Slider data={getTopFreelancer} />
             )}
           </Grid>
         </Grid>

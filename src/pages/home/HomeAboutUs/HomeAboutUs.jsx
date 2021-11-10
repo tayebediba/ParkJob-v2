@@ -1,16 +1,25 @@
 import { Grid, Paper, Typography } from "@material-ui/core";
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./homeAboutUs.module.css";
 import Layout from "../../../Layout/Layout";
 import abuotus from "../../../assets/img/home/aboutUs.png";
+import { scrollHandler } from "../../../helper/general";
 const HomeAboutUs = () => {
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <Layout>
       <Paper elevation={3} className={classes.urlPage}>
         پارک جاب/ درباره ما
       </Paper>
       <Grid container justifyContent="center">
-        <Grid item md={6} xs={12} style={{ textAlign: "center", marginTop: "2rem" }}>
+        <Grid
+          item
+          md={6}
+          xs={12}
+          style={{ textAlign: "center", marginTop: "2rem" }}
+        >
           <img className={classes.imgAbuot} src={abuotus} alt="abuotus-img" />
         </Grid>
         <Grid

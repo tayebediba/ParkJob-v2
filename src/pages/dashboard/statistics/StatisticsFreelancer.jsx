@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Paper, Grid, Tabs, Tab } from "@material-ui/core";
 import Rating from "@material-ui/lab/Rating";
 import "./statisticsFreelancer.css";
@@ -13,6 +13,7 @@ import comment from "../../../assets/Icons/dashboardIcon/comment.svg";
 import profile from "../../../assets/Icons/dashboardIcon/profile.svg";
 import star from "../../../assets/Icons/dashboardIcon/star.svg";
 import ChartsPage from "./ChartsPage";
+import { scrollHandler } from "../../../helper/general";
 
 function StatisticsFreelancer(props) {
   const [value, setValue] = React.useState(2);
@@ -20,7 +21,9 @@ function StatisticsFreelancer(props) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <div>
       <h3 style={{ paddingBottom: "2rem", margin: "0" }}>آمار عملکردها</h3>

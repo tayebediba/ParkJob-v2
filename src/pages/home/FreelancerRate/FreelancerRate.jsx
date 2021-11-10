@@ -15,7 +15,7 @@ import {
   Menu,
   MenuItem,
 } from "@material-ui/core";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../../../Layout/Layout";
 import classes from "./freelancerRate.module.css";
 import FreelancerTab from "./freelancerTab/FreelancerTab";
@@ -23,6 +23,7 @@ import FreelancersCard from "../Freelancers/FreelancersCard";
 import { Autocomplete, Rating } from "@material-ui/lab";
 import { Link } from "react-router-dom";
 import { Close, ErrorOutline } from "@material-ui/icons";
+import { scrollHandler } from "../../../helper/general";
 
 const ITEM_HEIGHT = 48;
 
@@ -57,6 +58,9 @@ const FreelancerRate = () => {
     { title: "" },
     { title: "" },
   ];
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <Layout>
       <Modal

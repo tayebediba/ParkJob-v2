@@ -1,17 +1,21 @@
 import { Button, ButtonGroup, Grid, Paper } from "@material-ui/core";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./questionsLayout.module.css";
 import freelancer from "../../../assets/img/home/freelancer.svg";
 import Layout from "../../../Layout/Layout";
 import FreelancerTab from "./FreelancerTab/FreelancerTab";
 import EmployerTab from "./EmployerTab/EmployerTab";
 import QuestionsTab from "./QuestionsTab/QuestionsTab";
+import { scrollHandler } from "../../../helper/general";
 
 const QuestionsLayout = () => {
   const [renderTab, setRenderTab] = useState("freelancer");
   const changeTabs = (tab) => {
     setRenderTab(tab);
   };
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
 
   let tab = null;
   switch (renderTab) {
@@ -30,7 +34,6 @@ const QuestionsLayout = () => {
 
       break;
   }
-
   return (
     <Layout>
       <Paper elevation={3} className={classes.urlPage}>

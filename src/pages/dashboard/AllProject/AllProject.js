@@ -1,8 +1,12 @@
 import { Grid } from "@material-ui/core";
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectDetailsCard from "../../../components/ProjectDetailsCard/ProjectDetailsCard";
+import { scrollHandler } from "../../../helper/general";
 
 const AllProject = () => {
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <Grid>
       <Grid container>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./membershipUpgrade.css";
 import {
   Button,
@@ -10,7 +10,11 @@ import {
 } from "@material-ui/core";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
 import { Link } from "react-router-dom";
-function MembershipUpgrade(props) {
+import { scrollHandler } from "../../../helper/general";
+const MembershipUpgrade = (props) => {
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <div>
       <h3 style={{ paddingBottom: "2rem", margin: "0" }}>ارتقا عضویت</h3>
@@ -146,6 +150,6 @@ function MembershipUpgrade(props) {
       </Grid>
     </div>
   );
-}
+};
 
 export default MembershipUpgrade;

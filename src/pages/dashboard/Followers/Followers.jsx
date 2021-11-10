@@ -1,9 +1,10 @@
 import { Grid } from "@material-ui/core";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FollowersCard from "../../../components/FollowersCard/FollowersCard";
 import "./Followers.css";
 import profPic from "../../../assets/img/avatar.jpg";
 import UserProfile from "../../../components/UserProfile/UserProfile";
+import { scrollHandler } from "../../../helper/general";
 
 function Followers() {
   const [freelancer] = useState([
@@ -36,6 +37,9 @@ function Followers() {
       follow: false,
     },
   ]);
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <Grid container>
       <h3 style={{ paddingBottom: "2rem", margin: "0" }}>دنبال کننده ها</h3>

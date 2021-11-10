@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./projectsList.module.css";
 import Layout from "../../../Layout/Layout";
 import {
@@ -16,6 +16,7 @@ import { Autocomplete } from "@material-ui/lab";
 
 import CheckboxesTags from "./CheckboxesTags";
 import AdvertisementBaner from "./AdvertisementBaner";
+import { scrollHandler } from "../../../helper/general";
 
 function valuetext(value) {
   return `${value}°C`;
@@ -37,7 +38,9 @@ const ProjectsList = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  useEffect(() => {
+    scrollHandler(0, 0);
+  }, []);
   return (
     <Layout>
       <Paper elevation={3} className={classes.urlPage}>
