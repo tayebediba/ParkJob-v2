@@ -45,22 +45,40 @@ const useStyles = makeStyles((theme) => ({
 const Doshboard = () => {
   const styles = useStyles();
   const [value, setValue] = useState(0);
+  const [displayBtn, setDisplayBtn] = useState(false);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+  const handleDisplayBtn = () => {
+    setDisplayBtn(!displayBtn);
+  };
+  const handleHideDisplayBtn = () => {
+    setDisplayBtn(false);
+  };
+
   return (
     <Grid container className="container">
-      <Grid xs={3} item style={{ maxWidth: "19%", flexBasis: "0%" }}>
+      <Grid
+        onClick={handleHideDisplayBtn}
+        xs={3}
+        item
+        style={{ maxWidth: "19%", flexBasis: "0%" }}
+      >
         <Sidebar />
       </Grid>
       <Grid item md={9} xs={12} style={{ maxWidth: "100%", flexBasis: "81%" }}>
         <Grid item xs={12}>
-          <Navbar />
+          <Navbar
+            handleDisplayBtn={handleDisplayBtn}
+            displayBtn={displayBtn}
+            setDisplayBtn={setDisplayBtn}
+          />
         </Grid>
 
         <Grid
+          onClick={handleHideDisplayBtn}
           xs={12}
           item
           className="dashboardContent"

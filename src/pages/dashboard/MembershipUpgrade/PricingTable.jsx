@@ -1,17 +1,23 @@
 import {
+  Backdrop,
   Button,
   Card,
   CardContent,
+  Fade,
   FormControl,
+  FormControlLabel,
   Grid,
   IconButton,
   InputLabel,
   MenuItem,
+  Modal,
   Paper,
   Select,
+  Switch,
   TextField,
   Typography,
 } from "@material-ui/core";
+import { Close } from "@material-ui/icons";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./pricingTable.css";
@@ -131,12 +137,100 @@ function PricingTable(props) {
                 بازگشت
               </Button>
             </Link>
-            <Button variant="contained" className="payment-btn">
+            <Button
+              variant="contained"
+              onClick={handleOpen}
+              className="payment-btn"
+            >
               پرداخت
             </Button>
           </div>
         </Grid>
       </Grid>
+      <Modal
+        aria-labelledby="freelancerRate-reportModal"
+        aria-describedby="transition-modal-description"
+        open={open}
+        className="modalPay"
+        onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={open}>
+          <div className="paperPay">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <h2 id="transition-modal-title">موجودی کافی نیست</h2>
+
+              <Close
+                onClick={handleOpen}
+                style={{
+                  position: "relative",
+                  top: "0.7rem",
+                  cursor: "pointer",
+                }}
+              />
+            </div>
+            <h3 id="transition-modal-title">موجودی کافی نیست</h3>
+            {/* <div>
+              <div style={{ position: "relative", top: "1.8rem" }}>
+                {" "}
+                <span className="spanUserName">نام کاربری</span>
+              </div>
+              <div className="divFormRoot">
+                <div className="divForm">
+                  <div>
+                    <input type="password" value="0000000000" />
+                  </div>
+                  <div>
+                    <FormControlLabel
+                      control={
+                        <Switch
+                      
+                          name="antoine"
+                        />
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div> */}
+
+            <div
+              style={{
+                marginTop: "2rem",
+                display: "flex",
+                justifyContent: "flex-end",
+                width: "100%",
+              }}
+            >
+              <Button
+                onClick={handleClose}
+                style={{ marginLeft: "1rem", top: "1rem" }}
+                variant="contained"
+                color="default"
+              >
+                انصراف
+              </Button>
+              <Button
+                style={{ marginLeft: "1rem", top: "1rem" }}
+                variant="contained"
+                color="primary"
+              >
+                ذخیره
+              </Button>
+            </div>
+          </div>
+        </Fade>
+      </Modal>
     </div>
   );
 }

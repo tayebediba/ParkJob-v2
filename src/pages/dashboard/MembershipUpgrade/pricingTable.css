@@ -46,3 +46,13 @@
   margin-top: 1rem;
   padding: 1rem;
 }
+.modalPay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paperPay {
+  background-color: #fafafa;
+  padding: 2rem;
+  width: 40%;
+}
