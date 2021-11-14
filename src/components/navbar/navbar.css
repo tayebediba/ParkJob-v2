@@ -113,6 +113,7 @@
   justify-content: space-between;
   margin-bottom: 1rem;
 }
+
 .btnsubmitemail {
   position: relative;
   cursor: pointer;
@@ -134,6 +135,22 @@
   background-color: #f0f1f3;
   position: relative;
   top: 0.7rem !important;
+  font-family: Dana-FaNum;
+  font-style: normal;
+  font-weight: bold;
+  height: 45px;
+  width: 116px;
+  left: 0px;
+  top: 0px;
+  border-radius: 7px;
+  outline: none;
+  border: navajowhite;
+}
+.btnsubmit2 {
+  cursor: pointer;
+  background-color: #f0f1f3;
+  position: relative;
+  top: 0.85rem !important;
   font-family: Dana-FaNum;
   font-style: normal;
   font-weight: bold;

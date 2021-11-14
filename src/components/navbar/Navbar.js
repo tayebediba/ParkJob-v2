@@ -213,7 +213,7 @@ const Navbar = ({ displayBtn, handleDisplayBtn, setDisplayBtn }) => {
                 <div>
                   <div>
                     {" "}
-                    <button className="btnsubmit">حذف حساب</button>
+                    <button className="btnsubmit2">حذف حساب</button>
                   </div>
                 </div>
               </div>
@@ -350,15 +350,25 @@ const Navbar = ({ displayBtn, handleDisplayBtn, setDisplayBtn }) => {
               }}
             >
               <Button
-                onClick={handleClose}
-                style={{ marginLeft: "1rem", top: "1rem" }}
+                onClick={handleCloseEditModal}
+                style={{
+                  marginLeft: "1rem",
+                  top: "1rem",
+                  fontFamily: "Dana",
+                  fontWeight: "bold",
+                }}
                 variant="contained"
                 color="default"
               >
                 انصراف
               </Button>
               <Button
-                style={{ marginLeft: "1rem", top: "1rem" }}
+                style={{
+                  marginLeft: "1rem",
+                  top: "1rem",
+                  fontFamily: "Dana",
+                  fontWeight: "bold",
+                }}
                 variant="contained"
                 color="primary"
               >

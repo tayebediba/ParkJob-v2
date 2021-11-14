@@ -179,31 +179,68 @@ function PricingTable(props) {
                 }}
               />
             </div>
-            <h3 id="transition-modal-title">موجودی کافی نیست</h3>
-            {/* <div>
-              <div style={{ position: "relative", top: "1.8rem" }}>
-                {" "}
-                <span className="spanUserName">نام کاربری</span>
-              </div>
-              <div className="divFormRoot">
-                <div className="divForm">
+            <h4 id="transition-modal-title">
+              موجودی حساب شما کمتر از مقدار قابل پرداخت می باشد . لطفا نسبت به
+              شارژ حساب خود اقدام کنید.{" "}
+            </h4>
+            <div>
+              {" "}
+              <span className="spanDiscountCode">کد تخفیف</span>
+            </div>
+            <div style={{ display: "flex" }}>
+              <div className="divFormRootDiscountCode">
+                <div className="divFormDs">
                   <div>
-                    <input type="password" value="0000000000" />
-                  </div>
-                  <div>
-                    <FormControlLabel
-                      control={
-                        <Switch
-                      
-                          name="antoine"
-                        />
-                      }
-                    />
+                    <input type="text" name="codeDs" placeholder="کد تخفیف" />
                   </div>
                 </div>
               </div>
-            </div> */}
-
+              <div>
+                {" "}
+                <button className="btnsubmitCodeDs">اعمال کد</button>
+              </div>
+            </div>
+            <div className="reportPay">
+              <div>
+                <h3>گزارش پرداخت</h3>
+              </div>
+              <div>
+                <div>
+                  {" "}
+                  <p>موجودی کیف پول</p>
+                </div>
+                <div>
+                  {" "}
+                  <p>۱۰۰,۰۰۰ ریال</p>
+                </div>
+                <div>
+                  <hr />
+                </div>
+              </div>
+              <div>
+                <div>
+                  {" "}
+                  <p>ایجاد پروژه</p>
+                </div>
+                <div>
+                  {" "}
+                  <p>۲۰۰,۰۰۰ ریال</p>
+                </div>
+                <div>
+                  <hr />
+                </div>
+              </div>
+              <div>
+                <div>
+                  {" "}
+                  <p>مبلغ قابل پرداخت</p>
+                </div>
+                <div>
+                  {" "}
+                  <p>۲۰۰,۰۰۰ ریال</p>
+                </div>
+              </div>
+            </div>
             <div
               style={{
                 marginTop: "2rem",
@@ -214,18 +251,29 @@ function PricingTable(props) {
             >
               <Button
                 onClick={handleClose}
-                style={{ marginLeft: "1rem", top: "1rem" }}
+                style={{
+                  marginLeft: "1rem",
+                  top: "1rem",
+                  fontFamily: "Dana",
+                  fontWeight: "bold",
+                }}
                 variant="contained"
                 color="default"
               >
-                انصراف
+                شارژ کیف پول
               </Button>
               <Button
-                style={{ marginLeft: "1rem", top: "1rem" }}
+                style={{
+                  marginLeft: "1rem",
+                  top: "1rem",
+                  backgroundColor: "#FFCB05",
+                  fontFamily: "Dana",
+                  fontWeight: "bold",
+                }}
                 variant="contained"
-                color="primary"
+                // color="primary"
               >
-                ذخیره
+                پرداخت
               </Button>
             </div>
           </div>
