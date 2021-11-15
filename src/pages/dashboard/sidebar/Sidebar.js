@@ -314,7 +314,7 @@ const SideBar = (props) => {
                         <Typography variant="button">
                           <Link
                             onClick={handleDisplaySidebarInMobile}
-                            to="/dashboard/followers"
+                            to="/dashboard/PaymentOne"
                           >
                             شماره حساب
                           </Link>
@@ -324,7 +324,7 @@ const SideBar = (props) => {
                         <Typography variant="button">
                           <Link
                             onClick={handleDisplaySidebarInMobile}
-                            to="/dashboard/followings"
+                            to="/dashboard/PaymentTwo"
                           >
                             کیف پول
                           </Link>
@@ -527,11 +527,67 @@ const SideBar = (props) => {
                     </Accordion>
                   </div>
                   <div>
-                    <Accordion elevation={0} expanded={false}>
-                      <AccordionSummary className="sidebarItem">
-                        <img src={payment} alt="dashboard" />
-                        <Link to="/dashboard/bills"> حساب بانکی </Link>
+                    <Accordion elevation={0}>
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreRounded />}
+                        className="sidebarItem"
+                      >
+                        <AccountBalanceWalletOutlined fontSize="small" />
+                        <Typography style={{ paddingRight: ".75rem" }}>
+                          {" "}
+                          امور مالی
+                        </Typography>
                       </AccordionSummary>
+                      <AccordionDetails className="sidebarItem">
+                        <Typography variant="button">
+                          <Link
+                            onClick={handleDisplaySidebarInMobile}
+                            to="/dashboard/PaymentOne"
+                          >
+                            شماره حساب
+                          </Link>
+                        </Typography>
+                      </AccordionDetails>
+                      <AccordionDetails className="sidebarItem">
+                        <Typography variant="button">
+                          <Link
+                            onClick={handleDisplaySidebarInMobile}
+                            to="/dashboard/PaymentTwo"
+                          >
+                            کیف پول
+                          </Link>
+                        </Typography>
+                      </AccordionDetails>
+                      <AccordionDetails className="sidebarItem">
+                        <Typography variant="button">
+                          <Link
+                            onClick={handleDisplaySidebarInMobile}
+                            to="/dashboard/followings"
+                          >
+                            گردش مالی
+                          </Link>
+                        </Typography>
+                      </AccordionDetails>
+                      <AccordionDetails className="sidebarItem">
+                        <Typography variant="button">
+                          <Link
+                            onClick={handleDisplaySidebarInMobile}
+                            to="/dashboard/followings"
+                          >
+                            برداشت
+                          </Link>
+                        </Typography>
+                      </AccordionDetails>
+                      <AccordionDetails className="sidebarItem">
+                        <Typography variant="button">
+                          <Link
+                            onClick={handleDisplaySidebarInMobile}
+                            to="/dashboard/followings"
+                          >
+                            آزادسازی وجه
+                          </Link>
+                        </Typography>
+                      </AccordionDetails>
                     </Accordion>
                   </div>
                   <div>
@@ -697,7 +753,7 @@ const SideBar = (props) => {
                         <Typography variant="button">
                           <Link
                             onClick={handleDisplaySidebarInMobile}
-                            to="/dashboard/followings"
+                            to="/dashboard/PaymentTwo"
                           >
                             کیف پول
                           </Link>
